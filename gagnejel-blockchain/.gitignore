@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Hardhat
+cache/
+artifacts/
+
+# Environment variables (CRITICAL - NEVER COMMIT!)
+.env
+.env.local
+.env.production
+
+# Deployment info (optional - contains addresses)
+deployment-*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+coverage.json
+.coverage_artifacts/
+.coverage_cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Hardhat TypeChain
+typechain/
+typechain-types/
