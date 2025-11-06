@@ -12,6 +12,9 @@ const app = express();
 const prisma = new PrismaClient();
 const blockchainService = require('./services/blockchain.service');
 const blockchainRoutes = require('./routes/blockchain.routes');
+const matchRoutes = require('./routes/match.routes');
+const betRoutes = require('./routes/bet.routes');
+
 const PORT = process.env.PORT || 5000;
 
 // ============================================
@@ -40,7 +43,8 @@ app.use((req, res, next) => {
 
 // Blockchain routes
 app.use('/api/blockchain', blockchainRoutes);
-
+app.use('/api/matches', matchRoutes);
+app.use('/api/bets', betRoutes);
 // Health check
 app.get('/', (req, res) => {
   res.json({
