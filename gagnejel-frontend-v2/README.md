@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GagneJèl Frontend
 
-## Getting Started
+Plateforme de paris sportifs décentralisée construite avec Next.js 14, Wagmi et RainbowKit.
 
-First, run the development server:
+## 🚀 Installation
+
+### 1. Installer les dépendances
+
+```bash
+npm install
+```
+
+### 2. Configurer les variables d'environnement
+
+```bash
+cp .env.local.example .env.local
+```
+
+Éditer `.env.local` et ajouter votre WalletConnect Project ID :
+- Aller sur https://cloud.walletconnect.com
+- Créer un compte gratuit
+- Créer un projet
+- Copier le Project ID
+
+### 3. Lancer l'application
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrir http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📚 Stack Technique
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework** : Next.js 14 (App Router)
+- **Langage** : TypeScript 5.x
+- **Styling** : Tailwind CSS 3.x
+- **Web3** : Wagmi 2.x + Viem 2.x + RainbowKit 2.x
+- **State** : React Query (TanStack Query)
+- **HTTP** : Axios
+- **Icons** : Lucide React
+- **Notifications** : React Hot Toast
 
-## Learn More
+## 🎨 Charte Graphique
 
-To learn more about Next.js, take a look at the following resources:
+- **Vert principal** : #10b981 (from-green-500 to-emerald-500)
+- **Jaune/Orange** : #f59e0b / #f97316
+- **Design** : Mobile-first responsive
+- **Style** : Coins arrondis, ombres douces, gradients
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 Prérequis
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Node.js 18+
+- Un wallet (MetaMask, Coinbase Wallet)
+- Backend GagneJèl sur http://localhost:5000
 
-## Deploy on Vercel
+## 🏗️ Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+app/              # Pages Next.js (App Router)
+components/       # Composants réutilisables
+lib/              # Librairies et utilitaires
+public/           # Assets statiques
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+**Développé avec 💚 par THE LEAD DEV**
